@@ -33,6 +33,7 @@ header {
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
+    height: 80px;
 }
 
 header:hover {
@@ -40,7 +41,7 @@ header:hover {
 }
 
 .logo img {
-    width: 150px;
+    width: 160px;
     transition: transform 0.3s ease;
 }
 
@@ -251,29 +252,40 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 717px) {
+@media (max-width: 764px) {
     header {
         flex-direction: row;
         align-items: none;
         padding: 5px; /* Reduce padding for header */
+        position: sticky;
+        max-height: 150px;
+        text-align: justify;
     }
 
     .logo img {
-        width: 90px; /* Reduce logo size */
+        width: 90px; 
+        height: auto;
+        padding-top: 20px;/* Reduce logo size */
     }
 
     nav ul {
         flex-direction: row;
-        gap: 9px; /* Reduce spacing between navigation items */
+        gap: 1px; /* Reduce spacing between navigation items */
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
     }
 
     nav ul li a {
-        font-size: 0.9em; /* Reduce font size for navigation links */
+        font-size: 1.0em; /* Reduce font size for navigation links */
         padding: 5px; /* Add padding for better touch targets */
     }
     section{
-        font-size: 0.9em;
+        font-size: 0.;
     }
+    #home h1{
+        font-size: 50px;
+    }
+   
 }
 
 /* General Section Styling */
