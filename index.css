@@ -251,26 +251,31 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 717px) {
     header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+        flex-direction: row;
+        align-items: none;
+        padding: 5px; /* Reduce padding for header */
     }
 
-    #home, #services, #contact {
-        padding: 30px 15px;
+    .logo img {
+        width: 90px; /* Reduce logo size */
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        gap: 9px; /* Reduce spacing between navigation items */
     }
 
     nav ul li a {
-        font-size: 1em;
+        font-size: 0.9em; /* Reduce font size for navigation links */
+        padding: 5px; /* Add padding for better touch targets */
+    }
+    section{
+        font-size: 0.9em;
     }
 }
+
 /* General Section Styling */
 section {
     margin: 40px auto;
