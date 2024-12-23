@@ -251,7 +251,7 @@ footer {
 }
 
 /* Responsive Design */
-@media screen and(max-width: 717px) {
+@media (max-width: 717px) {
     header {
         flex-direction: row;
         align-items: none;
