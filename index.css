@@ -31,7 +31,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(120deg, #1e1e1e, #333);
+    background: linear-gradient(120deg, #ffffff, #ffffff);
     padding: 15px 30px;
     position: sticky;
     top: 0;
@@ -42,10 +42,12 @@ header {
 }
 
 header:hover {
-    background: linear-gradient(120deg, #000000, #131212);
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    color: #000000;
 }
 
 .logo img {
+    padding-top: 10px;
     height: 73px;
     width: 160px;
     transition: transform 0.3s ease;
@@ -66,7 +68,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-size: 1.2em;
     font-weight: bold;
     position: relative;
@@ -82,10 +84,11 @@ nav ul li a::after {
     left: 0;
     bottom: -5px;
     transition: width 0.3s ease;
+    color: #000000;
 }
 
 nav ul li a:hover {
-    color: #53d4fc;
+    color: #000000;
 }
 
 nav ul li a:hover::after {
@@ -95,7 +98,7 @@ nav ul li a:hover::after {
 /* Home Section */
 #home {
     padding: 60px 20px;
-    text-align: center;
+    text-align: left;
     background: linear-gradient(to right, #d2d4d8, #e7d7c7);
     color: #000000;
     border-radius: 10px;
@@ -146,7 +149,6 @@ nav ul li a:hover::after {
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     color: #000;
-    text-align-last: justify;
 }
 
 #home h2{
@@ -154,11 +156,10 @@ nav ul li a:hover::after {
 
 }
 #home p {
-    display: flex;
-    justify-content: justify;
-    font-size: 1.5em;
+    text-align: start;
+    font-size: 1.2em;
     color: #000;
-    padding-left: 100px;
+    padding-left: 20px;
    
 }
 
@@ -307,11 +308,21 @@ footer {
         font-size: 1.0em; /* Reduce font size for navigation links */
         padding: 5px; /* Add padding for better touch targets */
     }
-    section{
-        font-size: 0.;
+    section p{
+        font-size: 1.0em;
+        padding-left: 20px;
+    }
+    section li{
+        font-size: 0.5em;
+    }
+    #offerings{
+        font-size: 0.8em;
+    }
+    #home{
+        padding: 20px;
     }
     #home h1{
-        font-size: 2.0em;
+        font-size: 1.5em;
     }
     #home p{
         font-size: 1.2em;
@@ -323,21 +334,17 @@ footer {
         width: 90px; 
         height: auto;
         padding-top: 30px;
+        align-items: start;
     }
-    #DTgroups, #aboutus {
+
+    #DTgroups,#servicesme,#contactme {
         max-width: 90%;
         width: 90%;
-        float: none;
-        display: block;
         margin: 10px auto;
-        text-align: center;
+        text-align: start;
     }
-    #about h1{
-        font-size: 2.0em;
-
-    }
-    #about p{
-        font-size: 1.2em;
+    #aboutus{
+        width: 50px;
     }
 
 }
@@ -452,9 +459,9 @@ section ul li:hover {
 
 #aboutus{
     display: flex;
-    justify-items: end;
-    height: 300px;
-    width: 300px;
+    justify-items: center;
+    height: 200px;
+    width: 200px;
     float: right;
     border: 3px solid #eee7e7;
     border-radius: 10px;
@@ -465,27 +472,10 @@ section ul li:hover {
 #aboutus:hover{
     transform: scale(1.1);
 }
-#about{
-    margin: 40px auto;
-    text-align: center;
-    border-radius: 15px;
-    max-width: 90%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(120deg, #f3d4ec, #b8a8b4);
-    animation: fadeInUp 1s ease;
-    font-family: sans-serif;
-}
-#about p{
-    display: flex;
-    justify-content: end;
-    font-size: 1.5em;
-    color: #000;
-    padding-left: 100px;
-    font-family: sans-serif;
-}
 #about h1{
     color: #000;
 }
+
 #contactme{
     width: 400px;
     height: 300px;
