@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(120deg, #f4f4f4, #e0e0e0);
@@ -41,8 +46,10 @@ header:hover {
 }
 
 .logo img {
+    height: 73px;
     width: 160px;
     transition: transform 0.3s ease;
+    border: 10px;
 }
 
 .logo img:hover {
@@ -89,14 +96,18 @@ nav ul li a:hover::after {
 #home {
     padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(to right, #0162f3, #04a9af);
-    color: #fff;
+    background: linear-gradient(to right, #d2d4d8, #e7d7c7);
+    color: #000000;
     border-radius: 10px;
     margin: 30px auto;
     max-width: 90%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     animation: fadeIn 1s ease;
 
+}
+#home:hover {
+    transform: scale(1.05);
+    background: linear-gradient(120deg, #c5d5df, #e2cbc0);
 }
 #button {
     display: flex;
@@ -134,17 +145,25 @@ nav ul li a:hover::after {
     margin-bottom: 15px;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #000;
+    text-align-last: justify;
 }
 
+#home h2{
+    color: #000;
+
+}
 #home p {
-    font-size: 1.3em;
-    line-height: 1.6;
-    margin: 15px auto;
-    max-width: 500px;
+    display: flex;
+    justify-content: justify;
+    font-size: 1.5em;
+    color: #000;
+    padding-left: 100px;
+   
 }
 
 #services {
-    background-color: #fff;
+    background-color: #000;
     padding: 50px 20px;
     text-align: center;
     border-radius: 15px;
@@ -152,6 +171,7 @@ nav ul li a:hover::after {
     max-width: 90%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     animation: slideIn 1s ease;
+    color: #000;
 
 
 }
@@ -167,9 +187,10 @@ nav ul li a:hover::after {
     }
 }
 
+
 #services h2 {
     font-size: 2.5em;
-    color: #f8f0f0;
+    color: #000000;
     margin-bottom: 25px;
     font-weight: bold;
     border-bottom: 2px solid #00C6FF;
@@ -187,8 +208,8 @@ nav ul li a:hover::after {
 #services ul li {
     font-size: 1.2em;
     padding: 12px;
-    background: linear-gradient(120deg, #f2f5f8, #c0e7f1);
-    color: white;
+    background: linear-gradient(120deg, #ff1b1b, #8d0bc9);
+    color: rgb(0, 0, 0);
     border-radius: 8px;
     margin-bottom: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -197,13 +218,16 @@ nav ul li a:hover::after {
 
 #services ul li:hover {
     transform: scale(1.05);
+    background: linear-gradient(120deg, #e47c05, #e47c05);
+    color: #000;
+
 }
 
 /* Contact Section */
 #contact {
     padding: 50px 20px;
     text-align: center;
-    background: #333;
+    background: #ffffff;
     color: #fff;
     margin: 30px auto;
     border-radius: 15px;
@@ -223,6 +247,8 @@ nav ul li a:hover::after {
     line-height: 1.6;
     max-width: 500px;
     margin: 0 auto 25px;
+    display: flex;
+    justify-content: center;
 }
 
 #contact a {
@@ -234,6 +260,8 @@ nav ul li a:hover::after {
     font-size: 1.2em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: end;
 }
 
 #contact a:hover {
@@ -265,7 +293,7 @@ footer {
     .logo img {
         width: 90px; 
         height: auto;
-        padding-top: 20px;/* Reduce logo size */
+        padding-top: 30px;/* Reduce logo size */
     }
 
     nav ul {
@@ -283,41 +311,84 @@ footer {
         font-size: 0.;
     }
     #home h1{
-        font-size: 50px;
+        font-size: 2.0em;
     }
-   
+    #home p{
+        font-size: 1.2em;
+        text-align: left;
+        display: flex;
+        justify-content: start;
+    }
+    .wrapper{
+        width: 90px; 
+        height: auto;
+        padding-top: 30px;
+    }
+    #DTgroups, #aboutus {
+        max-width: 90%;
+        width: 90%;
+        float: none;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+    #about h1{
+        font-size: 2.0em;
+
+    }
+    #about p{
+        font-size: 1.2em;
+    }
+
 }
+
+   
 
 /* General Section Styling */
 section {
     margin: 40px auto;
     padding: 50px 20px;
-    text-align: center;
-    border-radius: 15px;
+    border-radius:  15px;
     max-width: 90%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(120deg, #000000, #ff10c3);
+    background: linear-gradient(120deg, #ffffff, #ffffff);
     animation: fadeInUp 1s ease;
     font-family: sans-serif;
 }
-
-/* Section Headers */
-section h1, section h2 {
+section h1{
+    text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #fff7f7;
+    color: #fff;
     font-weight: bold;
     border-bottom: 2px solid #f50808;
     display: inline-block;
     padding-bottom: 5px;
     font-family: sans-serif;
+    animation: alternate-reverse;
+}
+
+
+/* Section Headers */
+section h2{
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 2px solid #f50808;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    animation: alternate-reverse;
 }
 
 /* Section Paragraphs */
 section p {
+    text-align: left;
     font-size: 1.2em;
     line-height: 1.6;
-    color: #fffefe;
+    color: #000000;
     margin: 20px auto;
     max-width: 800px;
     font-family: sans-serif;
@@ -335,17 +406,21 @@ section ul li {
     font-size: 1.2em;
     padding: 15px 20px;
     margin-bottom: 15px;
-    background: linear-gradient(120deg, #e90808, #00C6FF);
-    color: white;
+    background: linear-gradient(120deg, #cccfc1, #d0d3d4);
+    color: rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background-color 0.3s ease;
     font-family: sans-serif;
 }
-
+section ul li p{
+    color: #000000;
+    
+}
 section ul li:hover {
     transform: scale(1.05);
-    background: linear-gradient(120deg, #21aafa, #007BFF);
+    background: linear-gradient(120deg, #ff8d0a, #ff8d0a);
+    color: #ffffff;
 }
 
 /* Animations */
@@ -359,3 +434,67 @@ section ul li:hover {
         transform: translateY(0);
     }
 }
+.wrapper{
+    margin: 150px,auto;
+    width: 100%;
+}
+#DTgroups{
+    max-width: 500px;
+    float: left;
+    border: 3px solid #eee7e7;
+    border-radius: 10px;
+    box-shadow: linear-gradient(120deg,#818181,#000000);
+    margin-right: 15px;   
+}
+#DTgroups:hover {
+    transform: scale(1.1);
+}
+
+#aboutus{
+    display: flex;
+    justify-items: end;
+    height: 300px;
+    width: 300px;
+    float: right;
+    border: 3px solid #eee7e7;
+    border-radius: 10px;
+    box-shadow: linear-gradient(120deg,#818181,#000000);
+    margin-right: 15px;
+
+}
+#aboutus:hover{
+    transform: scale(1.1);
+}
+#about{
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(120deg, #f3d4ec, #b8a8b4);
+    animation: fadeInUp 1s ease;
+    font-family: sans-serif;
+}
+#about p{
+    display: flex;
+    justify-content: end;
+    font-size: 1.5em;
+    color: #000;
+    padding-left: 100px;
+    font-family: sans-serif;
+}
+#about h1{
+    color: #000;
+}
+#contactme{
+    width: 400px;
+    height: 300px;
+    float: left;
+    padding-left: 30px;
+}
+#servicesme{
+    width: 400px;
+    height: 300px;
+    padding-left: 30px;
+}
+
