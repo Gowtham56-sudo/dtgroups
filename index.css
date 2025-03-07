@@ -148,11 +148,11 @@ nav ul li a:hover::after {
     margin-bottom: 15px;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    color: #000;
+    color: #000000;
 }
 
 #home h2{
-    color: #000;
+    color: #ff6600;
 
 }
 #home p {
@@ -366,7 +366,7 @@ section h1{
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #fff;
+    color: #f35a02;
     font-weight: bold;
     border-bottom: 2px solid #f50808;
     display: inline-block;
@@ -381,7 +381,7 @@ section h2{
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #000000;
+    color: #ff7b00;
     font-weight: bold;
     border-bottom: 2px solid #f50808;
     display: inline-block;
@@ -473,7 +473,7 @@ section ul li:hover {
     transform: scale(1.1);
 }
 #about h1{
-    color: #000;
+    color: #fd6500;
 }
 
 #contactme{
