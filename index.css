@@ -31,25 +31,25 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(120deg, #ffffff, #ffffff);
-    padding: 15px 30px;
+    background: linear-gradient(120deg,#00C6FF, #ffffff, #4d4848);
+    padding: 15px 15px;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    height: 80px;
+    height: 90px;
 }
 
 header:hover {
-    background: linear-gradient(120deg, #ffffff, #ffffff);
+    background: linear-gradient(120deg, #424040, #ffffff,#00C6FF);
     color: #000000;
 }
 
 .logo img {
     padding-top: 10px;
-    height: 73px;
-    width: 160px;
+    height: 90px;
+    width: 100px;
     transition: transform 0.3s ease;
     border: 10px;
 }
@@ -84,7 +84,7 @@ nav ul li a::after {
     left: 0;
     bottom: -5px;
     transition: width 0.3s ease;
-    color: #000000;
+    color: #ffffff;
 }
 
 nav ul li a:hover {
@@ -292,9 +292,10 @@ footer {
     }
 
     .logo img {
-        width: 90px; 
-        height: auto;
-        padding-top: 30px;/* Reduce logo size */
+        width: 100px; 
+        height: 90px;
+        padding-top: 15px;
+        padding-left: 10px;/* Reduce logo size */
     }
 
     nav ul {
@@ -345,6 +346,10 @@ footer {
     }
     #aboutus{
         width: 50px;
+    }
+    #contact p{
+        text-align: left;
+
     }
 
 }
