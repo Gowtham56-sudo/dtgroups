@@ -80,7 +80,7 @@ nav ul li a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    background: #53d4fc;
+    background: #ff0000;
     left: 0;
     bottom: -5px;
     transition: width 0.3s ease;
@@ -88,11 +88,13 @@ nav ul li a::after {
 }
 
 nav ul li a:hover {
-    color: #000000;
+    box-shadow: 0 0 15px #ff0171, 0 0 30px #ff0171;
+    background: #ff0171;
 }
 
 nav ul li a:hover::after {
-    width: 100%;
+    box-shadow: 0 0 15px #ff0171, 0 0 30px #ff0171;
+    background: #ff0171;
 }
 
 /* Home Section */
@@ -129,7 +131,7 @@ nav ul li a:hover::after {
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #ff0505;
 }
 
 @keyframes fadeIn {
@@ -226,13 +228,11 @@ nav ul li a:hover::after {
 
 /* Contact Section */
 #contact {
-    padding: 50px 20px;
     text-align: center;
     background: #ffffff;
     color: #fff;
     margin: 30px auto;
     border-radius: 15px;
-    max-width: 90%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     animation: fadeIn 1.5s ease;
 }
@@ -241,28 +241,29 @@ nav ul li a:hover::after {
     font-size: 2.5em;
     margin-bottom: 25px;
     font-weight: bold;
+    text-align: left;
+    padding-right: 100px;
 }
 
 #contact p {
     font-size: 1.1em;
     line-height: 1.6;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto 25px;
-    display: flex;
-    justify-content: center;
+    text-align: left;
+    padding-left: 200px;
+    ;
 }
 
 #contact a {
     text-decoration: none;
     background: linear-gradient(120deg, #00C6FF, #007BFF);
     color: #fff;
-    padding: 12px 25px;
+    padding: 12px 20px;
     border-radius: 8px;
-    font-size: 1.2em;
+    font-size: 1.0em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, transform 0.3s ease;
-    display: flex;
-    justify-content: end;
 }
 
 #contact a:hover {
@@ -300,7 +301,7 @@ footer {
 
     nav ul {
         flex-direction: row;
-        gap: 1px; /* Reduce spacing between navigation items */
+        gap: 1.5px; /* Reduce spacing between navigation items */
         justify-content: center; /* Centers horizontally */
         align-items: center; /* Centers vertically */
     }
@@ -338,7 +339,7 @@ footer {
         align-items: start;
     }
 
-    #DTgroups,#servicesme,#contactme {
+    #DTgroups,#servicesme,#aboutus,#contactme {
         max-width: 90%;
         width: 90%;
         margin: 10px auto;
@@ -347,8 +348,16 @@ footer {
     #aboutus{
         width: 50px;
     }
+    #about img{
+        display: flex;
+        justify-content: start;
+    }
     #contact p{
         text-align: left;
+        font-size: 0.9em;
+        display: flex;
+        justify-content: start;
+        padding-right: 100px;
 
     }
 
@@ -492,4 +501,10 @@ section ul li:hover {
     height: 300px;
     padding-left: 30px;
 }
-
+#slogan{
+    text-align: center;
+    color:#e47c05;
+    padding-top: 10px;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
