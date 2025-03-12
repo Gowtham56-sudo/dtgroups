@@ -475,10 +475,11 @@ section ul li:hover {
 }
 #slogan{
     text-align: center;
-    color:#ff0505;
+    color:#fa7b05;
     padding-top: 10px;    
     font-family: "Pacifico", cursive;
     font-weight: 500;
+    font-size: larger;
     font-style: normal;
     font-size: large;
     text-shadow:  2px 5px rgba(253, 246, 246, 0.2);
