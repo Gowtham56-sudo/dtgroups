@@ -110,10 +110,6 @@ nav ul li a:hover::after {
     animation: fadeIn 1s ease;
 
 }
-#home:hover {
-    transform: scale(1.05);
-    background: linear-gradient(120deg, #c5d5df, #e2cbc0);
-}
 #button {
     display: flex;
     justify-content: center;
@@ -245,16 +241,6 @@ nav ul li a:hover::after {
     padding-right: 100px;
 }
 
-#contact p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto 25px;
-    text-align: left;
-    padding-left: 200px;
-    ;
-}
-
 #contact a {
     text-decoration: none;
     background: linear-gradient(120deg, #00C6FF, #007BFF);
@@ -264,6 +250,9 @@ nav ul li a:hover::after {
     font-size: 1.0em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, transform 0.3s ease;
+}
+#contact ul li{
+    font-size: small;
 }
 
 #contact a:hover {
@@ -312,7 +301,6 @@ footer {
     }
     section p{
         font-size: 1.0em;
-        padding-left: 20px;
     }
     section li{
         font-size: 0.5em;
@@ -346,21 +334,14 @@ footer {
         text-align: start;
     }
     #aboutus{
-        width: 50px;
+        padding-right: 90px;
+        max-width: auto;
+        max-height: auto;
     }
-    #about img{
-        display: flex;
-        justify-content: start;
+    #contact h1{
+        font-size: 1.5em;
     }
-    #contact p{
-        text-align: left;
-        font-size: 0.9em;
-        display: flex;
-        justify-content: start;
-        padding-right: 100px;
-
-    }
-
+   
 }
 
    
@@ -472,19 +453,10 @@ section ul li:hover {
 }
 
 #aboutus{
-    display: flex;
-    justify-items: center;
-    height: 200px;
-    width: 200px;
+    max-height:300px;
+    max-width:300px;
     float: right;
-    border: 3px solid #eee7e7;
-    border-radius: 10px;
-    box-shadow: linear-gradient(120deg,#818181,#000000);
     margin-right: 15px;
-
-}
-#aboutus:hover{
-    transform: scale(1.1);
 }
 #about h1{
     color: #fd6500;
@@ -503,8 +475,11 @@ section ul li:hover {
 }
 #slogan{
     text-align: center;
-    color:#e47c05;
-    padding-top: 10px;
-    
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#ff0505;
+    padding-top: 10px;    
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+    text-shadow:  2px 5px rgba(253, 246, 246, 0.2);
 }
